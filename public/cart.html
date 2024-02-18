@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary fixed-top border-bottom border-body" data-bs-theme="dark">
+
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 d-flex">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white font-weight-semi-bold" aria-current="page" href="homepage.html" style="font-size: 18px;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-weight-semi-bold" href="products.html" style="font-size: 18px;">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-weight-semi-bold" href="cart.html" style="font-size: 18px;">Cart</a>
+                    </li>
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link text-white font-weight-semi-bold" href="#" data-toggle="modal" data-target="#loginModal" style="font-size: 18px;">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal" id="loginModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Admin Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="login()">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+    <div class="container">
+        <h1 class="mt-5" style="padding-top: 40px;">Your Cart</h1>
+        <h1 class="mt-5" style="padding-top: 40px;">Under construction</h1>
+        <div id="cart-items" class="mt-3"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
